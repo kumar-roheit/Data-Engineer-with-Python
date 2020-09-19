@@ -16,5 +16,7 @@ import this
   eg.  `range(0,11)` or `range(11)`
 
 ## - enumerate - Creates an index list of objects. The enumerate object can be converted into a list
-  eg. ```py enumerate(list, start=starting_index_to_enumerate_from)```
+  eg. ```py 
+  enumerate(list, start=starting_index_to_enumerate_from)
+  ```
  
