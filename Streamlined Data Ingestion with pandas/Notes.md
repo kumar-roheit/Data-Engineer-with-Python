@@ -10,7 +10,7 @@
             - a list containing lists of columns to combine and parse
             - a dictionary where keys are new column names and values are lists of columns to parse together
 5. To reduce the file size, whenever we are ingesting a JSON data, we need to be mindfull that it may have been split formatted. 
-      '''python
-          df = pd.read_json("foo.json",orient="split")
-      '''
+      ```py
+      df = pd.read_json("foo.json",orient="split")
+      ```
 
