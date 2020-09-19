@@ -60,7 +60,7 @@ print(indexed_names_unpack)
   ```
 
 
-## map(function~~()~~, iterables) 
+## map(function ~~()~~, iterables) 
    * To apply a function (func()) to each element of list(or other dtypes), you can use the command `map(func, names)`.  
       #### Note that the func argument should not contain closing parentheses.
    ```py
