@@ -5,7 +5,7 @@
 3. If an Excel file has some sheets that you want loaded with the same parameters, you can get them in one go by **passing a list of their names or indices to read_excel()'s sheet_name keyword. *To get them all*, pass **None**.
 
 4. **Date-Time processing with pandas** - Datetime columns are loaded as objects (*strings*) by default. We could specify that columns have datetimes with the **parse_dates** argument (not dtype!)
-      - parse_dates can accept:
-            ** a list of column names or numbers to parse
-            ** a list containing lists of columns to combine and parse
-            ** a dictionary where keys are new column names and values are lists of columns to parse together
+      * parse_dates can accept:
+            - a list of column names or numbers to parse
+            - a list containing lists of columns to combine and parse
+            - a dictionary where keys are new column names and values are lists of columns to parse together
