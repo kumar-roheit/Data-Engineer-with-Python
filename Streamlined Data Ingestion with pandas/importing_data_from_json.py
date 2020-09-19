@@ -59,3 +59,14 @@ flat_cafes = json_normalize(data["businesses"],
                     		meta_prefix="biz_")
 # View the data
 print(flat_cafes.head())
+
+#----------------------------------------------------------------Merge Data Frames----------------------------------------------------------------#
+
+# Task: Merge two datasets with the DataFrame merge() method. The first,crosswalk, is a crosswalk between ZIP codes and Public Use Micro Data Sample Areas (PUMAs), which are aggregates of census tracts and correspond roughly to NYC neighborhoods. Then, you'll merge in pop_data, which contains 2016 population estimates for each PUMA. Pandas (as pd) has been imported, as has the cafes data frame .
+
+# Merge crosswalk into cafes on their zip code fields
+cafes_with_pumas = cafes.merge(crosswalk, left_on='location_zip_code', right_on='zipcode')
+# Merge pop_data into cafes_with_pumas on puma field
+cafes_with_pop = cafes_with_pumas.merge(pop_data, left_on='puma', right_on='puma')
+# View the data
+print(cafes_with_pop.head())
