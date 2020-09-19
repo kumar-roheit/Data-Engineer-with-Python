@@ -39,6 +39,9 @@ counts = all_responses.groupby("EmploymentStatus").EmploymentStatus.count()
 counts.plot.barh()
 plt.show()
 
+# -----------------------------------BOOLEAN handling--------------------------------
+
+
 # Task: fcc_survey_subset.xlsx contains a string ID column and several True/False columns indicating financial stressors. You'll evaluate which non-ID columns have no NA values and therefore can be set as Boolean, then tell read_excel() to load them as such 
 
 # Set dtype to load appropriate column(s) as Boolean data
@@ -46,3 +49,28 @@ survey_data = pd.read_excel("fcc_survey_subset.xlsx",
                             dtype={"HasDebt": bool})
 # View financial burdens by Boolean group
 print(survey_data.groupby('HasDebt').sum())
+
+# Task: Survey data, has some unrecognized values, such as "Yes" and "No". make sure they're properly interpreted pandas read_excel() as true and false values 
+# Load file with Yes as a True value and No as a False value
+survey_subset = pd.read_excel("fcc_survey_yn_data.xlsx",
+                              dtype={"HasDebt": bool,
+                              "AttendedBootCampYesNo": bool},
+                              true_values= ["Yes"],
+                              false_values= ["No"])   
+# View the data
+print(survey_subset.head())
+
+# -----------------------------------DATE-TIME handling--------------------------------
+
+# Task: A column in the survey data has been split so that dates are in one column, Part2StartDate, and times are in another, Part2StartTime. Your task is to combine them into one datetime column with a new name.
+datetimecol = {Part2Start: ["Part2StartDate", "Part2StartTime"]}
+# Load file, supplying the dict to parse_dates
+survey_data = pd.read_excel("fcc_survey_dts.xlsx",
+                            parse_dates=datetime_cols)
+# View summary statistics about Part2Start
+print(survey_data.Part2Start.describe())
+
+
+
+
+
