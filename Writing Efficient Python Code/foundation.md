@@ -6,11 +6,14 @@ Use list comprehension
 best_list = [name for name in names if len(name) >= 6]
 ```
 ---------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Zen of Python - a journey towards a pythonic way of coding
 ``` py 
 import this
 ``` 
 ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # Buit-ins 
 ## range(Start, stop) excluding stop  
   eg.  `range(0,11)` or `range(11)`
@@ -28,6 +31,8 @@ print(nums_list)
 nums_list2 = [*range(1,12,2)]
 print(nums_list2)
 ```
+
+
 ## enumerate 
    * Creates an index list of objects. 
    * The enumerate object can be converted into a list
@@ -53,6 +58,7 @@ print(indexed_names_comp)
 indexed_names_unpack = [*enumerate(names, start=1)]
 print(indexed_names_unpack)
   ```
+
 
 ## map
    * To apply a function (func()) to each element of list(or other dtypes), you can use the command `map(func, names)`.  
