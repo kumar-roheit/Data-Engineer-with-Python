@@ -55,4 +55,18 @@ print(indexed_names_unpack)
   ```
 
 ## map
-   * To apply a function (func()) to each element of list(or other dtypes), you can use the command `map(func, names)`. ##### Note that the func argument should not contain closing parentheses.
+   * To apply a function (func()) to each element of list(or other dtypes), you can use the command `map(func, names)`.  
+      #### Note that the func argument should not contain closing parentheses.
+   ```py
+      # Use map to apply str.upper to each element in names
+      names_map  = map(str.upper, names)
+
+      # Print the type of the names_map
+      print(type(names_map))
+
+      # Unpack names_map into a list
+      names_uppercase = [*map(str.upper,names)]
+
+      # Print the list created above
+      print(names_uppercase)
+```
