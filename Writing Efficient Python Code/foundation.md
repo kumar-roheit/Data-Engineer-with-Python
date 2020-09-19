@@ -1,4 +1,4 @@
-#  looping over a list.
+#  Looping over a list.
 Suppose you wanted to collect the names in the above list that have six letters or more.
 ```names = ['Jerry', 'Kramer', 'Elaine', 'George', 'Newman']```
 Use list comprehension
@@ -28,7 +28,7 @@ print(nums_list)
 nums_list2 = [*range(1,12,2)]
 print(nums_list2)
 ```
-## Enumerate 
+## enumerate 
    * Creates an index list of objects. 
    * The enumerate object can be converted into a list
    * Python's built-in enumerate() function allows you to create an index for each item in the object you give it. 
@@ -38,21 +38,21 @@ print(nums_list2)
   enumerate(list, start=starting_index_to_enumerate_from)
   
   --------------------------------------------------------------------
-  # Rewrite the for loop to use enumerate
+  # check the below loop 
 indexed_names = []
 for i,name in enumerate(names):
     index_name = (i,name)
     indexed_names.append(index_name) 
 print(indexed_names)
 
-# Rewrite the above for loop using list comprehension
+# Rewriting the above for loop using list comprehension
 indexed_names_comp = [(i,name) for i,name in enumerate(names)]
 print(indexed_names_comp)
 
-# Unpack an enumerate object with a starting index of one
+# Unpacking an enumerate object with a starting index of one
 indexed_names_unpack = [*enumerate(names, start=1)]
 print(indexed_names_unpack)
   ```
 
-## - map 
- 
+## map
+   * To apply a function (func()) to each element of list(or other dtypes), you can use the command `map(func, names)`. ##### Note that the func argument should not contain closing parentheses.
