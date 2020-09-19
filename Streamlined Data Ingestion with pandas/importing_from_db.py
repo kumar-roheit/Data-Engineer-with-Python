@@ -15,3 +15,14 @@ engine = create_engine("sqlite:///data.db")
 
 # Load entire weather table by table name
 weather = pd.read_sql("weather", engine)
+
+
+# Task: The records in hpd311calls often concern issues, like leaks or heating problems, that are exacerbated by weather conditions. In this exercise, you'll join weather data to call records and get everything in one data frame.
+
+# Query to join weather to call records by date columns
+query = """
+SELECT * FROM hpd311calls JOIN weather 
+  ON hpd311calls.created_date = weather.date;
+"""
+# Create data frame of joined tables
+calls_with_weather = pd.read_sql(query, engine)
