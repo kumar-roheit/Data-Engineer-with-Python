@@ -15,8 +15,8 @@ import this
 
 
 # Buit-ins 
-## range(Start, stop) excluding stop  
-  eg.  `range(0,11)` or `range(11)`
+## range(Start, stop) excluding stop 
+To print a range from 0 to 10 we can do the following: `range(0,11)` or `range(11)`
 ### More examples
 ```py
 # Create a range object that goes from 0 to 5
@@ -33,7 +33,7 @@ print(nums_list2)
 ```
 
 
-## enumerate 
+## enumerate(iterable, start) 
    * Creates an index list of objects. 
    * The enumerate object can be converted into a list
    * Python's built-in enumerate() function allows you to create an index for each item in the object you give it. 
@@ -60,7 +60,7 @@ print(indexed_names_unpack)
   ```
 
 
-## map
+## map(function~~()~~, iterables) 
    * To apply a function (func()) to each element of list(or other dtypes), you can use the command `map(func, names)`.  
       #### Note that the func argument should not contain closing parentheses.
    ```py
