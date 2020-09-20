@@ -76,3 +76,14 @@ print(indexed_names_unpack)
       # Print the list created above
       print(names_uppercase)
 ```
+
+
+## Timing and profiling the code
+* Consider using the literal syntaxes (like [] instead of list(), {} instead of dict(), or () instead of tuple()), where applicable, to gain some speed.
+* One can use %timeit to gather runtime for a single line of code (line magic mode) and %%timeit to get the runtime for multiple lines of code. 
+
+## Code Profiling for time
+* To profile a function in our code if we'd like to see line-by-line runtimes
+    * Use `%load_ext line_profiler` to load the line_profiler within your IPython session. 
+    * Use `%lprun -f convert_units convert_units(heroes, hts, wts)` to get line-by-line runtimes.
+    
