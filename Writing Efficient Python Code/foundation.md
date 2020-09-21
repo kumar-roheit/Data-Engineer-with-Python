@@ -87,3 +87,12 @@ print(indexed_names_unpack)
     * Use `%load_ext line_profiler` to load the line_profiler within your IPython session. 
     * Use `%lprun -f convert_units convert_units(heroes, hts, wts)` to get line-by-line runtimes.
     
+## Sets 
+* Membership testing is much faster when you use sets. Did you notice that using a set for member testing is faster than using a list regardless if the item you are checking is in the set?
+* Using a set data type to collect unique values is much faster than using a for loop (like in the find_unique_items() function). Since a set is defined as a collection of distinct elements, it is an efficient way to collect unique items from an existing object. 
+
+## Numpy
+* eliminate loops using NumPy broadcasting and list comprehension wherever possible.
+
+## Miscellaneous 
+* use combinations, map, zip, Counter, set wherever applicable to optimize your code firther.
