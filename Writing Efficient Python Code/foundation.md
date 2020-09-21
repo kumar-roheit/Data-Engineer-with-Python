@@ -96,3 +96,8 @@ print(indexed_names_unpack)
 
 ## Miscellaneous 
 * use combinations, map, zip, Counter, set wherever applicable to optimize your code firther.
+
+# Pandas Optimization
+
+* `.iterrows()` returns each DataFrame row as a tuple of (index, pandas Series) pairs, you can either split this tuple and use the index and row-values separately (as you did with `for i,row in pit_df.iterrows())`, or you can keep the result of `.iterrows()` in the tuple form (as you did with for` row_tuple `in `pit_df.iterrows())`.
+  * If using `i,row`, you can access things from the row using square brackets (i.e., `row['Team']`). If using `row_tuple`, you would have to specify which element of the tuple you'd like to access before grabbing the team name (i.e., `row_tuple[1]['Team']`).
