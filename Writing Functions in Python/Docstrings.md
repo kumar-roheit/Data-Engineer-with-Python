@@ -23,3 +23,4 @@ print(build_tooltip(print))
 ```
 
 * Tools like sphinx and pydoc that will automatically generate online documentation for you based off of your docstrings.
+* When you need to set a mutable variable as a default argument, always use None and then set the value in the body of the function. This prevents unexpected behavior like adding multiple columns if you call the function more than once.
