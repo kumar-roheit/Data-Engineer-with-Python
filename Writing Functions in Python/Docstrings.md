@@ -1,4 +1,6 @@
 # Docstrings
+
+* ## Google Doc String example 
 ```py
 def build_tooltip(function):
   """Create a tooltip for any function that shows the 
@@ -19,3 +21,5 @@ print(build_tooltip(count_letter))
 print(build_tooltip(range))
 print(build_tooltip(print))
 ```
+
+* Tools like sphinx and pydoc that will automatically generate online documentation for you based off of your docstrings.
