@@ -101,3 +101,11 @@ print(indexed_names_unpack)
 
 * `.iterrows()` returns each DataFrame row as a tuple of (index, pandas Series) pairs, you can either split this tuple and use the index and row-values separately (as you did with `for i,row in pit_df.iterrows())`, or you can keep the result of `.iterrows()` in the tuple form (as you did with for` row_tuple `in `pit_df.iterrows())`.
   * If using `i,row`, you can access things from the row using square brackets (i.e., `row['Team']`). If using `row_tuple`, you would have to specify which element of the tuple you'd like to access before grabbing the team name (i.e., `row_tuple[1]['Team']`).
+* `.itertuples()` returns each DataFrame row as a special data type called a` namedtuple`. You can look up an attribute within a` namedtuple` with a special syntax. 
+  * Remember, you need to use the dot syntax for referencing an attribute in a `namedtuple`.
+  *  .itertuples() is just like using .iterrows() except it tends to be faster. 
+
+* .apply() method let's you apply functions to all rows or columns of a DataFrame by specifying an axis.
+  * One could have also used .apply() directly on a Series (or column) of the DataFrame. For example, you could use rays_df['Playoffs'].apply(text_playoffs) to convert the 'Playoffs' column to text.
+* Using a DataFrame's underlying arrays to perform calculations can really speed up your code and yields some significant efficiency gains.
+* .itertuples() approach beat the .apply() approach? Even though both these implementations can be useful, you should default to using a DataFrame's underlying arrays(NUMpy) to perform calculations.
