@@ -1,6 +1,6 @@
 # Docstrings
 
-* ## Google Doc String example 
+* ##### Google Doc String example 
 ```py
 def build_tooltip(function):
   """Create a tooltip for any function that shows the 
