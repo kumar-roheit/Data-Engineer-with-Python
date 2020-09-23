@@ -56,7 +56,7 @@ $ cut -d , -f 2 seasonal/winter.csv | grep -v Tooth | sort | uniq -c
 ```sh
 $ wc -l seasonal/*csv | grep -v total | sort -n | head -n 1
 ```
-
+#### Environment Variables
 | Variable     | Purpose                | Value         |
 | :---         |     :---:              |          ---: |
 | `HOME`       | User's home directory  | `/home/repl`  |
@@ -64,3 +64,11 @@ $ wc -l seasonal/*csv | grep -v total | sort -n | head -n 1
 | `SHELL`      | Which shell program is being used |`/bin/bash` |
 | `USER`       | USer's ID              | `repl` |
 
+* looping in shell
+```sh
+$ for filetype in docx odt pdf; do echo $filetype; done
+```
+* **Command Line Arguments** 
+    1. $@ = stores all the arguments in a list of string
+    2. $* = stores all the arguments as a single string
+    3. $# = stores the number of arguments 
