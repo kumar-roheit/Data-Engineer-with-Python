@@ -18,3 +18,17 @@
 
 * To prints the first few lines of a file (where "a few" means 10) we use a command called `head`.
  * The shell lets you change head's behavior by giving it a command-line flag (or just "flag" for short). If you run the command: `head -n 3 seasonal/summer.csv` head will only display the first three lines of the file. If you run `head -n 100`, it will display the first 100 (assuming there are that many), and so on.
+
+#### Tasks
+> Print the contents of all of the lines containing the word molar in seasonal/autumn.csv by running a single command while in your home directory. Don't use any flags.
+```sh
+grep molar seasonal/autumn.csv
+```
+> Invert the match to find all of the lines that don't contain the word molar in seasonal/spring.csv, and show their line numbers. Remember, it's considered good style to put all of the flags before other values like filenames or the search term "molar".
+```sh
+grep -n -v molar seasonal/spring.csv
+```
+> Count how many lines contain the word incisor in autumn.csv and winter.csv combined. (Again, run a single command from your home directory.)
+```sh
+grep -c incisor seasonal/autumn.csv seasonal/winter.csv
+```
