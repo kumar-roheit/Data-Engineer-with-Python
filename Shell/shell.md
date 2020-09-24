@@ -72,3 +72,5 @@ $ for filetype in docx odt pdf; do echo $filetype; done
     1. $@ = stores all the arguments in a list of string
     2. $* = stores all the arguments as a single string
     3. $# = stores the number of arguments 
+
+* **Remember** that datafile[1-100]txt is the equivalent of datafile1.txt, datafile2.txt ... datafile100.txt, whereas datafile[001-100].txt is the equivalent of datafile001.txt, datafile002.txt... datafile100.txt.
