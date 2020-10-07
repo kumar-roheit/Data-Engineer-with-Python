@@ -55,4 +55,4 @@ print(bd.month)
 print(bd.day)
 ```
 
-###### Python always calls the child's __eq__() method when comparing a child object to a parent object.
+-  ##### Python always calls the child's __eq__() method when comparing a child object to a parent object.
