@@ -35,8 +35,8 @@ class BetterDate:
     def __init__(self, year, month, day):
       self.year, self.month, self.day = year, month, day
       
-    @classmethod
-    def from_str(cls, datestr):
+    @classmethod #class method decorator
+    def from_str(cls, datestr): # special first argument cls
         year, month, day = map(int, datestr.split("-"))
         return cls(year, month, day)
       
@@ -54,3 +54,5 @@ print(bd.year)
 print(bd.month)
 print(bd.day)
 ```
+
+###### Python always calls the child's __eq__() method when comparing a child object to a parent object.
