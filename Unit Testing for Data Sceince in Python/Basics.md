@@ -1,4 +1,6 @@
 ## Unit Test Notes
+> A *unit* is any small independent piece of code, and could be a python function or class.
+> Integration tests check in multiple unit work well together when they are connected and not just independently.
 
 ### Unit Testing Basics
 
