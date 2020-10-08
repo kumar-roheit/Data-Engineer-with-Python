@@ -36,6 +36,7 @@ def test_for_missing_area():
 * Do not use equality operator `=` to check if variable is `None` type.
 * Spotting and fixing bugs
     > To find bugs in functions, you need to follow a four step procedure.
+    
         1. Write unit tests.
         2. Run them.
         3. Read the test result report and spot the bugs.
