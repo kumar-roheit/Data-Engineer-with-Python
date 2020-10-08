@@ -4,15 +4,19 @@
 
 ### Step 2 
 * **Imports** . Import the package you  would use to perform unit testing. example.-: 
-                                      ```py 
-                                      import pytest 
-### Step 3
-* Unit Tests -: 
-               ```py
-               def test_for_clean_row():
-               ```
+```py 
+import pytest 
+```
 
-###
+### Step 3
+* Unit Tests  
+> 
+```py
+def test_for_clean_row():
+```
+
+### Step 4 
+*
 
 ```
 ```py
