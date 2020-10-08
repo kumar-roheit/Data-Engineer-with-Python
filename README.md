@@ -1,2 +1,2 @@
 # Data-Engineer-with-Python
-My Codes from the DataCamp course for Data Engineering..
+My Codes and Notes from the DataCamp course for Data Engineering Career Track
