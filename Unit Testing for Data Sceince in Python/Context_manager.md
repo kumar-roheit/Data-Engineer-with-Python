@@ -1,4 +1,4 @@
-#### Context Manager - To test whether a function raises an exception we could use a context manager. 
+**Context Manager** - To test whether a function raises an exception we could use a context manager. 
 
 ```py
 with ____:    print("This is part of the context")    # any code inside is the context
