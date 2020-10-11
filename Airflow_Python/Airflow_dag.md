@@ -8,9 +8,10 @@
   * They run independently.
   * there are various types of Operators
   
-Types of Operators
-
-Bash Operators
+> Types of Operators
+  **BashOperator, PythonOperator, EmailOperator **
+  
+-Bash Operators
 * used to execute bash command and scripts 
 * run the command in a temporary directory 
 
