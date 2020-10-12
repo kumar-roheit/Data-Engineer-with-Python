@@ -16,7 +16,7 @@ cleandata_dag = DAG('cleandata',
                     default_args=default_args,
                     schedule_interval='@daily')
 
-# Modify the template to handle multiple files in a 
+# handle multiple files in a 
 # single run.
 templated_command = """
   <% for filename in params.filenames %>
@@ -24,7 +24,7 @@ templated_command = """
   <% endfor %>
 """
 
-# Modify clean_task to use the templated command
+# use the templated command in the BashOperator
 clean_task = BashOperator(task_id='cleandata_task',
                           bash_command=templated_command,
                           params={'filenames': filelist},
